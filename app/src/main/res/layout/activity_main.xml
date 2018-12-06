@@ -5,6 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -24,6 +25,7 @@
                 android:scaleType="fitXY"/>
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
@@ -40,10 +42,11 @@
         </FrameLayout>
 
         <TextView
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:text="Rp.11.000.000,-"
+            android:text="@string/_11000000"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_margin="@dimen/activity_horizontal_margin"
@@ -51,6 +54,7 @@
             android:textColor="@android:color/black"/>
 
         <TextView
+            style="@style/TextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/content_text"
@@ -61,9 +65,10 @@
             android:textColor="@android:color/black"/>
 
         <TextView
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spesifikasi"
+            android:text="@string/spesifikasi"
             android:textSize="12sp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -82,13 +87,15 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
+                    style="@style/TextSpec.Field"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:layout_marginRight="@dimen/activity_horizontal_margin"
-                    android:text="Display"/>
+                    android:text="@string/display"/>
 
                 <TextView
+                    style="@style/TextSpec.Value"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -103,6 +110,30 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:text="Size"/>
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -110,6 +141,7 @@
                     android:text="Battray"/>
 
                 <TextView
+                    style="@style/TextSpec.Value"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -120,9 +152,10 @@
         </TableLayout>
 
         <TextView
+            style="@style/TextContent.Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dijual oleh"
+            android:text="@string/dijual_oleh"
             android:textSize="12dp"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -144,18 +177,20 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
             <TextView
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/profil_image"
-                android:text="Sukmo Afri Ardi Saputro"
+                android:text="@string/sukmo_afri_afri_saputro"
                 android:textColor="@android:color/black"
                 android:layout_centerVertical="true"/>
         </RelativeLayout>
 
             <Button
+                style="@style/ButtonGeneral"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Beli"
+                android:text="@string/beli"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
